@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image">
+      <div class="logo-container">
+        <span>TaB</span>
+      </div>
+      <p class="attribution">Photo by <a href="https://unsplash.com/@forest_ms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Forest Simon</a> on <a href="https://unsplash.com/photos/ZKbve9f7Mp4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    </div>
+    <div class="form-container">
+      <div class="top">
+        <p class="notice">
+          This is not a real online service!
+        </p>
+        <p class="intro">
+          Get the latest info on how you can most effectively save the planet and its creatures through your diet.
+        </p>
+        <p class="cta">Sign up <em>now</em> to get started</p>
+      </div>
+      <form action="#" method="post">
+        <div class="form-content">
+          <p class="form-title">Hop on board!</p>
+          <div class="input">
+            <label for="fname">First Name</label>
+            <span class="input-field"><input type="text" name="fname" id="fname" required placeholder="John" pattern="^[^\d,\W]+$" minlength="2"></span>
+          </div>
+          <div class="input">
+            <label for="lname">Last Name</label>
+            <span class="input-field"><input type="text" name="lname" id="lname" placeholder="Smith" pattern="^[^\d,\W]+$" minlength="2"></span>
+          </div>
+          <div class="input">
+            <label for="email">E-mail</label>
+            <span class="input-field"><input type="email" name="email" id="email" placeholder="name@domain.com" required></span>
+          </div>
+          <div class="input">
+            <label for="tel">Phone Number</label>
+            <span class="input-field"><input type="tel" name="tel" id="tel" minlength="6" placeholder="06301234567" pattern="[0-9]{9,11}"></span>
+          </div>
+          <div class="input">
+            <label for="password">Password</label>
+            <span class="input-field"><input type="password" name="password" id="password" placeholder="8-16 characters" minlength="8" maxlength="16" required></span>
+          </div>
+          <div class="input">
+            <label for="cpassword">Confirm Password</label>
+            <span class="input-field"><input type="password" name="cpassword" id="cpassword" placeholder="8-16 characters" minlength="8" maxlength="16" required></span>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <button type="submit">Sign Up!</button>
+          <p class="already">Already have an account? <a>Log In</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
